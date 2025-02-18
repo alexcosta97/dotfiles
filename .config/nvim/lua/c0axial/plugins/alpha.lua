@@ -5,13 +5,17 @@ return {
 
     -- Set menu
     dashboard.section.buttons.val = {
-      dashboard.button("n", "New File", "<cmd>ene<CR>"),
-      dashboard.button("e", "Toggle file explorer", "<cmd>Neotree filesystem reveal left<CR>"),
-      dashboard.button("f", "Find File", "<cmd>Telescope find_files<CR>"),
-      dashboard.button("g", "Find Text", "<cmd>Telescope live_grep<CR>"),
-      dashboard.button("r", "Recent Files", "<cmd>Telescope oldfiles<CR>"),
-      dashboard.button("l", "Lazy", "<cmd>Lazy<CR>"),
-      dashboard.button("q", "Quit", "<cmd>qa<CR>"),
+      dashboard.button("n", " " .. " New File", "<cmd>ene<CR>"),
+      dashboard.button(
+        "e",
+        " " .. "Toggle file explorer",
+        "<cmd>lua require('neo-tree.command').execute({ toggle = true })<CR>"
+      ),
+      dashboard.button("f", " " .. " Find File", "<cmd>Telescope find_files<CR>"),
+      dashboard.button("g", " " .. " Find Text", "<cmd>Telescope live_grep<CR>"),
+      dashboard.button("r", " " .. " Recent Files", "<cmd>Telescope oldfiles<CR>"),
+      dashboard.button("l", "󰒲 " .. " Lazy", "<cmd>Lazy<CR>"),
+      dashboard.button("q", " " .. " Quit", "<cmd>qa<CR>"),
     }
 
     --Disable folding on alpha buffer
