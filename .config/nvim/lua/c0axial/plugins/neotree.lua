@@ -6,7 +6,13 @@ return {
     "nvim-tree/nvim-web-devicons",
     "MunifTanjim/nui.nvim",
   },
-  init = function()  
-    vim.keymap.set('n', '<leader>e', ':Neotree filesystem reveal left<CR>', {desc = 'File Explorer'})
-  end
+  keys = {
+    {
+      "<leader>e",
+      function()
+        require("neo-tree.command").execute({ toggle = true })
+      end,
+      desc = "File Explorer",
+    },
+  },
 }

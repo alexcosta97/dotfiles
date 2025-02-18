@@ -6,7 +6,7 @@ return {
     transparent = false,
     styles = {
       sidebars = "dark",
-      floats = "dark"
+      floats = "dark",
     },
     on_colors = function(colors)
       local bg = "#011628"
@@ -33,5 +33,5 @@ return {
   },
   init = function()
     vim.cmd("colorscheme tokyonight")
-  end
+  end,
 }

@@ -1,14 +1,15 @@
 return {
-  'folke/which-key.nvim',
-  event = 'VeryLazy',
-  opts_extend = { 'spec' },
+  "folke/which-key.nvim",
+  event = "VeryLazy",
+  opts_extend = { "spec" },
   opts = {
-    preset = 'helix',
+    preset = "helix",
     spec = {
-      { '<leader>w', group = 'windows'},
-      { '<leader>f', group = 'file/find'},
-      { '<leader>t', group = 'tabs'},
-      { '<leader>b', group = 'buffer'}, 
-    }
-  }
+      { "<leader>w", group = "windows" },
+      { "<leader>f", group = "file/find" },
+      { "<leader>t", group = "tabs" },
+      { "<leader>b", group = "buffer" },
+      { "g", group = "goto" },
+    },
+  },
 }
