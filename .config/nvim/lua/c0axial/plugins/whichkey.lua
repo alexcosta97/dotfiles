@@ -9,6 +9,7 @@ return {
       { "<leader>f", group = "file/find" },
       { "<leader>t", group = "tabs" },
       { "<leader>b", group = "buffer" },
+      { "<leader>c", group = "code" },
       { "g", group = "goto" },
     },
   },

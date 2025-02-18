@@ -40,7 +40,6 @@ opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- use system clipboard 
 opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
-
 opt.confirm = true -- Confirm to save changes before exiting modified buffer
 
 -- Timeout
