@@ -4,7 +4,7 @@ vim.g.maplocalleader = "\\"
 local keymap = vim.keymap
 
 -- Buffer management
-keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Delete Buffer" })
+keymap.set("n", "<leader>bd", ":bp<bar>sp<bar>bn<bar>bd<CR>", { desc = "Delete Buffer" })
 
 -- Window management
 keymap.set("n", "<leader>|", "<C-W>v", { desc = "Split Window Right", remap = true })
