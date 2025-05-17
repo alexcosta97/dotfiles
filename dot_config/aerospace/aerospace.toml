@@ -24,12 +24,12 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 on-focus-changed = "move-mouse window-lazy-center"
 
 [gaps]
-inner.horizontal = 8
-inner.vertical = 8
-outer.left = 8
-outer.bottom = 8
-outer.top = 18
-outer.right = 8
+inner.horizontal = 12
+inner.vertical = 12
+outer.left = 12
+outer.bottom = 12
+outer.top = 42
+outer.right = 12
 
 [mode.main.binding]
 alt-slash = 'layout tiles horizontal vertical'
@@ -44,7 +44,7 @@ alt-s = 'focus-monitor left'
 alt-g = 'focus-monitor right'
 
 alt-n = 'workspace next'
-alt-p = 'workspace previous'
+alt-p = 'workspace prev'
 
 alt-shift-h = 'move left'
 alt-shift-j = 'move down'
@@ -55,7 +55,7 @@ alt-shift-s = 'move-node-to-monitor left'
 alt-shift-g = 'move-node-to-monitor right'
 
 alt-shift-n = 'move-node-to-workspace next'
-alt-shift-p = 'move-node-to-workspace previous'
+alt-shift-p = 'move-node-to-workspace prev'
 
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
@@ -119,6 +119,20 @@ alt-shift-h = ['join-with left', 'mode main']
 alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
+
+[workspace-to-monitor-force-assignment]
+1 = 'main'
+2 = 'main'
+3 = 'main'
+4 = 'main'
+5 = 'main'
+6 = ['secondary', 'main']
+7 = ['secondary', 'main']
+8 = ['secondary', 'main']
+9 = ['secondary', 'main']
+C = 'main'
+B = ['secondary', 'main']
+T = 'main'
 
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
